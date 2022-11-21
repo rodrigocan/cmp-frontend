@@ -1,9 +1,9 @@
 import { List, Table, useTable } from "@pankod/refine-antd"
 
-import { ILocal } from "interfaces"
+import { ISetor } from "interfaces"
 
-export const LocalList: React.FC = () => {
-  const { tableProps } = useTable<ILocal>()
+export const SetorList: React.FC = () => {
+  const { tableProps } = useTable<ISetor>()
   return (
     <List>
       <Table {...tableProps} rowKey="id">
