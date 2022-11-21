@@ -7,7 +7,10 @@ export const SetorList: React.FC = () => {
   return (
     <List>
       <Table {...tableProps} rowKey="id">
-        <Table.Column dataIndex="nome" title="nome" />
+        <Table.Column dataIndex="nome" title="Nome" />
+        <Table.Column dataIndex="email" title="E-mail" />
+        <Table.Column dataIndex="ramal" title="Ramal" />
+        <Table.Column dataIndex="local" title="Local" />
       </Table>
     </List>
   )
