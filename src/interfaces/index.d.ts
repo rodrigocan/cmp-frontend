@@ -1,7 +1,6 @@
 export interface ILocal {
   id: number
   nome: string
-  setores: ISetor[]
 }
 
 export interface ISetor {
