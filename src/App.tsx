@@ -15,7 +15,7 @@ import routerProvider from "@pankod/refine-react-router-v6"
 
 import { axiosInstance } from "./authProvider"
 import { API_URL } from "./constants"
-import { LocalList, SetorList, SetorShow } from "./pages"
+import { LocalList, LocalShow, SetorList, SetorShow } from "./pages"
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
       catchAll={<ErrorComponent />}
       routerProvider={routerProvider}
       resources={[
-        { name: "locais", list: LocalList },
+        { name: "locais", list: LocalList, show: LocalShow },
         { name: "setores", list: SetorList, show: SetorShow }
       ]}
     />
