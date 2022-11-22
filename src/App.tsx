@@ -13,14 +13,13 @@ import { DataProvider } from "@pankod/refine-strapi-v4"
 import "@pankod/refine-antd/dist/styles.min.css"
 import routerProvider from "@pankod/refine-react-router-v6"
 
-import { authProvider, axiosInstance } from "./authProvider"
+import { axiosInstance } from "./authProvider"
 import { API_URL } from "./constants"
-import { LocalList, SetorList } from "./pages"
+import { LocalList, SetorList, SetorShow } from "./pages"
 
 function App() {
   return (
     <Refine
-      // authProvider={authProvider}
       dataProvider={DataProvider(API_URL + `/api`, axiosInstance)}
       LoginPage={AuthPage}
       notificationProvider={notificationProvider}
@@ -30,7 +29,7 @@ function App() {
       routerProvider={routerProvider}
       resources={[
         { name: "locais", list: LocalList },
-        { name: "setores", list: SetorList }
+        { name: "setores", list: SetorList, show: SetorShow }
       ]}
     />
   )

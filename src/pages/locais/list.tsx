@@ -7,7 +7,7 @@ export const LocalList: React.FC = () => {
   return (
     <List>
       <Table {...tableProps} rowKey="id">
-        <Table.Column dataIndex="nome" title="nome" />
+        <Table.Column dataIndex="nome" title="Nome" />
       </Table>
     </List>
   )
