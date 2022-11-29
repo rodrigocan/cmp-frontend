@@ -1,4 +1,4 @@
-import { useShow, useOne } from "@pankod/refine-core"
+import { useShow } from "@pankod/refine-core"
 import { Show, Typography } from "@pankod/refine-antd"
 
 const { Title, Text } = Typography
