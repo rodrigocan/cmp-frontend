@@ -34,3 +34,15 @@ export interface IChamado {
   email_solicitante: string
   responsavel: string
 }
+
+export interface IServico {
+  id: number
+  area: string
+  descricao: string
+}
+
+export interface IArea {
+  id: number
+  nome: string
+  servicos: string[]
+}
