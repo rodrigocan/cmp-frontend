@@ -18,3 +18,19 @@ export interface ISetor {
   ramal: string
   local: ILocal
 }
+
+export interface IChamado {
+  id: number
+  local: ILocal
+  setor: ISetor
+  status: string
+  resumo: string
+  diagnostico?: string
+  solucao?: string
+  data_hora_solucao?: Date
+  servico: string
+  solicitante: string
+  telefone_solicitante: string
+  email_solicitante: string
+  responsavel: string
+}
