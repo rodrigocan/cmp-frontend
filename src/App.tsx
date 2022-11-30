@@ -21,7 +21,8 @@ import {
   SetorList,
   SetorShow,
   ChamadoList,
-  ServicoList
+  ServicoList,
+  AreaList
 } from "./pages"
 
 function App() {
@@ -37,8 +38,9 @@ function App() {
       resources={[
         { name: "locais", list: LocalList, show: LocalShow },
         { name: "setores", list: SetorList, show: SetorShow },
-        { name: "chamados", list: ChamadoList },
-        { name: "servicos", list: ServicoList }
+        { name: "areas", list: AreaList },
+        { name: "servicos", list: ServicoList },
+        { name: "chamados", list: ChamadoList }
       ]}
     />
   )
